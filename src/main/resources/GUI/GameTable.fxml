@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #efb117;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameTable">
+   <children>
+      <ImageView fx:id="playerCardTwoImage" fitHeight="150.0" fitWidth="120.0" layoutX="230.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCardOneImage" fitHeight="150.0" fitWidth="120.0" layoutX="340.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="firstBotCardTwoImage" fitHeight="150.0" fitWidth="120.0" layoutX="565.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" />
+      <ImageView fx:id="firstBotCardOneImage" fitHeight="150.0" fitWidth="120.0" layoutX="565.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" />
+      <ImageView fx:id="secondBotCardOneImage" fitHeight="150.0" fitWidth="120.0" layoutX="230.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" />
+      <ImageView fx:id="secondBotCardTwoImage" fitHeight="150.0" fitWidth="120.0" layoutX="340.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" />
+      <ImageView fx:id="thirdBotCardOneImage" fitHeight="150.0" fitWidth="120.0" layoutX="29.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+      <ImageView fx:id="thirdBotCardTwoImage" fitHeight="150.0" fitWidth="120.0" layoutX="29.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+      <Label layoutX="496.0" layoutY="39.0" text="Coins in Treasury :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="497.0" layoutY="15.0" text="Cards in Deck :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="65.0" text="Turn :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cardsInDeckLabel" layoutX="607.0" layoutY="17.0" prefHeight="17.0" prefWidth="39.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="coinsInTreasuryLabel" layoutX="627.0" layoutY="41.0" prefHeight="17.0" prefWidth="39.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="turnLabel" layoutX="545.0" layoutY="67.0" prefHeight="17.0" prefWidth="48.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="419.0" prefHeight="17.0" prefWidth="48.0" text="Player" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTableBotLabel" layoutX="513.0" layoutY="292.0" prefHeight="17.0" prefWidth="31.0" text="Bot 1" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirdTableBotLabel" layoutX="158.0" layoutY="292.0" prefHeight="17.0" prefWidth="31.0" text="Bot3" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTableBotLabel" layoutX="325.0" layoutY="164.0" prefHeight="17.0" prefWidth="31.0" text="Bot2" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="16.0" text="Cards Out :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dukeOutLabel" layoutX="34.0" layoutY="41.0" prefHeight="17.0" prefWidth="16.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="41.0" prefHeight="17.0" prefWidth="48.0" text="Duke" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="assassinOutLabel" layoutX="34.0" layoutY="59.0" prefHeight="17.0" prefWidth="16.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="59.0" prefHeight="17.0" prefWidth="48.0" text="Assassin" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="contessaOutLabel" layoutX="34.0" layoutY="77.0" prefHeight="17.0" prefWidth="16.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="77.0" prefHeight="17.0" prefWidth="52.0" text="Contessa" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="captainOutLabel" layoutX="34.0" layoutY="94.0" prefHeight="17.0" prefWidth="16.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="94.0" prefHeight="17.0" prefWidth="52.0" text="Captain" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="ambassadorOutLabel" layoutX="34.0" layoutY="111.0" prefHeight="17.0" prefWidth="16.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="111.0" prefHeight="17.0" prefWidth="73.0" text="Ambassador" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="challengeButton" layoutX="41.0" layoutY="429.0" mnemonicParsing="false" onAction="#challenge" style="-fx-background-color: #ff5100;" text="Challenge">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="incomeButton" layoutX="471.0" layoutY="435.0" mnemonicParsing="false" onAction="#income" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="income">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="foreignAidButton" layoutX="471.0" layoutY="467.0" mnemonicParsing="false" onAction="#foreignAid" prefHeight="20.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="foreign aid">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="taxButton" layoutX="565.0" layoutY="435.0" mnemonicParsing="false" onAction="#tax" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="tax">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="assassinateButton" layoutX="471.0" layoutY="497.0" mnemonicParsing="false" onAction="#assassinate" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="assassinate">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="stealButton" layoutX="565.0" layoutY="467.0" mnemonicParsing="false" onAction="#steal" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="steal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="exchangeButton" layoutX="565.0" layoutY="497.0" mnemonicParsing="false" onAction="#exchange" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="exchange">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="coupButton" layoutX="565.0" layoutY="559.0" mnemonicParsing="false" onAction="#coup" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="COUP">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="blockForeignAidButton" layoutX="471.0" layoutY="528.0" mnemonicParsing="false" onAction="#blockForeignAid" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="block foreign aid">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="blockStealingButton" layoutX="565.0" layoutY="528.0" mnemonicParsing="false" onAction="#blockStealing" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="block stealing">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="blockAssassinationButton" layoutX="471.0" layoutY="559.0" mnemonicParsing="false" onAction="#blockAssassination" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ff5100;" text="block assassination">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Button>
+      <Button fx:id="skipButton" layoutX="146.0" layoutY="429.0" mnemonicParsing="false" onAction="#skip" style="-fx-background-color: #ff5100;" text="Skip">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="whichChoiceBox" layoutX="41.0" layoutY="497.0" prefWidth="150.0" style="-fx-background-color: #ff5100;" />
+      <Label fx:id="whichLabel" layoutX="41.0" layoutY="480.0" prefHeight="17.0" prefWidth="97.0" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="newExchangeButton" layoutX="41.0" layoutY="535.0" mnemonicParsing="false" onAction="#newExchange" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #ff5100;" text="new exchange">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Circle fill="#fff200" layoutX="301.0" layoutY="429.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="playerCoinLabel" layoutX="293.0" layoutY="419.0" prefHeight="20.0" prefWidth="16.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle fill="#fff200" layoutX="529.0" layoutY="322.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="firstBotCoinLabel" layoutX="521.0" layoutY="312.0" prefHeight="20.0" prefWidth="16.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle fill="#fff200" layoutX="309.0" layoutY="173.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="secondBotCoinLabel" layoutX="301.0" layoutY="163.0" prefHeight="20.0" prefWidth="16.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle fill="#fff200" layoutX="174.0" layoutY="322.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="thirdBotCoinLabel" layoutX="166.0" layoutY="312.0" prefHeight="20.0" prefWidth="16.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
